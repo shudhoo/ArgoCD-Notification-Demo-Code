@@ -1,26 +1,26 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: web-app-1-b
+  name: web-app-2-a
   # You'll usually want to add your resources to the argocd namespace.
   namespace: argocd
   labels:
-    name: web-app-1-b
+    name: web-app-2-a
 spec:
   # The project the application belongs to.
-  project: app-1
+  project: app-2
 
   # Source of the application manifests
   source:
     repoURL: https://github.com/shudhoo/ArgoCD-Notification-Demo-Code.git # Can point to either a Helm chart repo or a git repo.
     targetRevision: HEAD  # For Helm, this refers to the chart version.
-    path: web-app-1-b  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
+    path: app-2/web-app-2-a  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
 
   destination:
     # cluster API URL
     server: https://kubernetes.default.svc
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
-    namespace: app-1
+    namespace: app-2
 
   # Extra information to show in the Argo CD Application details tab
   # info:

@@ -11,3 +11,15 @@ Argo CD Notifications integrate with the Argo CD application controller, which m
 4. Once an event is captured, the controller processes it and determines whether it matches any predefined criteria for notifications. If it does, the controller forwards the event to the appropriate notification   services.
 5. These notification services are configured to send messages to various platforms, such as Slack, email, or custom webhooks. For example, when using Slack as the notification platform, the event data is formatted and sent to a specified Slack channel via the Slack notifications service.
 
+
+### To Get Started for the ArgoCD Notification Demo, Need a Kubernetes Cluster. It can be EKS, AKS, Minikube etc.
+* I am using Minikube, which is Local Kubernetes Cluster. And Installed ArgoCD on the Cluster.
+
+![alt text](image.png)
+
+* Deploy 2 Applications inside ArgoCD.
+1. web-app-1-a --> namespace: app-1
+2. web-app-1-b --> namespace: app-1
+3. web-app-2-a --> namespave: app-2
+
+Create 2 namespaces named **app-1** & **app-2**. Deploy the above App to the respective namespace, create Application.yaml to deploy the application using **ArgoCD UI** OR **ArgoCD CLI**

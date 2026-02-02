@@ -13,7 +13,7 @@ spec:
   # Source of the application manifests
   source:
     repoURL: git@github.com:shudhoo/ArgoCD-Notification-Demo-Code.git # Can point to either a Helm chart repo or a git repo.
-    targetRevision: HEAD  # For Helm, this refers to the chart version.
+    targetRevision: main  # For Helm, this refers to the chart version.
     path: app-1/web-app-1-a  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
 
   destination:

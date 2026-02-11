@@ -6,6 +6,9 @@ metadata:
   namespace: argocd
   labels:
     name: web-app-2-a
+  annotations:
+    notifications.argoproj.io/subscribe.on-app-deployed.teams: channelName
+    notifications.argoproj.io/subscribe.on-sync-failed.teams: channelName
 spec:
   # The project the application belongs to.
   project: app-2

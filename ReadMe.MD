@@ -23,3 +23,7 @@ Argo CD Notifications integrate with the Argo CD application controller, which m
 3. web-app-2-a --> namespave: app-2
 
 Create 2 namespaces named **app-1** & **app-2**. Deploy the above App to the respective namespace, create Application.yaml to deploy the application using **ArgoCD UI** OR **ArgoCD CLI**
+
+
+
+https://intelliconnectq.webhook.office.com/webhookb2/de3ea671-d7d1-4732-83fa-0fa42a8eee01@bd0edc69-11ea-4701-85eb-20002872112d/IncomingWebhook/d5158dc1642140448b00fa232162eb65/7276cd65-0735-4c7f-8863-78f9048178be/V26g1kDiZDmjn0ncE-5L9d-WQJl9AfmjALNEzzdAr1x5M1
